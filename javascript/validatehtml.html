@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<input type="text" id="age"><button onclick="validateage()">validate</button>
+<div class="result">
+    <h2>no content</h2>
+
+</div>
+
+</body>
+<script>
+      
+    function validateage(){
+        let ageval=age.value;
+        let html_data=""
+        if(ageval>18){
+             html_data=`<h1> you are eligible</h1>`
+        }
+        else{
+            html_data=`<h1> you are not eligible</h1>`
+        }
+        document.querySelector(".result").innerHTML=html_data
+    }
+
+</script>
+</html>
